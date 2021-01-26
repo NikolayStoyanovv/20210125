@@ -1,0 +1,31 @@
+﻿/*Упражнение 11*. Напишете функция void reverse(char s[]), която обръща
+низа char s[]. Използвайте for цикъл с два аргумента, разделени със запетая
+i = 0, j = strlen(s) – 1; i < j; i++, j-- , за да обърнете стринга.*/
+#include <stdio.h>
+#include <string.h>
+char s[100];
+
+char outputString[100];
+int length;
+int i;
+
+void reverse(char s[]){
+    length = strlen( s );
+    int j = 0;
+    
+    for( i = length - 1; i >= 0; i--) {
+        outputString[ j ] = s[ i ];
+        j++;
+    }
+    printf( "The reversed string is: ");
+    printf( "%s", outputString );
+    printf( "\n" );
+}
+int main (){
+
+        printf( "Please Enter a string to be reversed \n" );
+        scanf( "\n%s", s );
+
+        reverse(s);
+    return 0;
+}

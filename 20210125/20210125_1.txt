@@ -1,0 +1,19 @@
+﻿/*Пребройте символите, подавани на конзолата, с
+функцията
+getchar(); */
+#include<stdio.h>
+
+int main(){
+
+    int c;
+    c=getchar();
+    int counter=0;
+
+    while(c!=EOF){
+        c=getchar();
+        counter++;
+    }
+
+    printf("\nThe number of entered symbols:%d",counter);
+    return 0;
+}

@@ -1,0 +1,18 @@
+﻿/*Пребройте редовете, подадени чрез текст на конзолата.
+Използвайте функцията getchar();*/
+#include<stdio.h>
+
+int main(){
+    int c,newLine=0;
+
+    
+    while((c=getchar())!=EOF){
+
+        if(c=='\n'){
+            newLine++;
+        }
+        
+    }
+    printf("\nThe number of entered rows:%d",newLine);
+    return 0;
+}
